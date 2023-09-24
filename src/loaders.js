@@ -11,6 +11,6 @@ export const indexLoader = async () => {
 export const showLoader = async ({params}) => {
     const id = params.id
     const response = await fetch(url + id)
-    const todo = await response.json()
+    const job = await response.json()
     return job
 }

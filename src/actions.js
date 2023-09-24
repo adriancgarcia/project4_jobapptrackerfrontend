@@ -3,7 +3,7 @@ import {redirect} from "react-router-dom"
 
 // create new action
 export const createAction = async({request}) => {
-    const fromData = await request.formData();
+    const formData = await request.formData();
 
     const newJob = {
         position: formData.get("position"),
@@ -58,7 +58,7 @@ export const updateAction = async({request, params}) => {
         body: JSON.stringify(updatedJob)
     })
 
-        return redirect("/post/${id}")
+        return redirect(`/post/${id}`)
 }
 
 // Delete action
