@@ -42,8 +42,8 @@ function Show (props) {
                     <button>Update Job</button>
                 </Form>
                 <Form method="post" action={`/delete/${post.id}`}>
-            <button>Delete Job</button>
-        </Form>
+                    <button>Delete Job</button>
+                </Form>
             </div>
             <Link to ="/">Back to Index</Link>
         </div>
