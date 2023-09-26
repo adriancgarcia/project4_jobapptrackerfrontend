@@ -20,7 +20,7 @@ function Index (props){
             <input type="text" name="interview_status" placeholder="Interview Status"/>
             <input type="text" name="application_origin" placeholder="Where did you find application"/>
             <h2>Did you send a thank you note?</h2><input type="checkbox" name="thankyou_sent" placeholder="Thank you note sent"/>
-            <button>Create a new Job Application</button>
+            <button>Create New Job Application</button>
         </Form>
     </div>
     {jobs.map((job) => <Post key={job.id} post={job}/>)}
