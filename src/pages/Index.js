@@ -11,7 +11,7 @@ function Index (props){
             <input type="text" name="position" placeholder="Job Position"/>
             <input type="text" name="company_name" placeholder="Company Name"/>
             <input type="text" name="job_description" placeholder="Job Description"/>
-            <input type="checkbox" name="applied" placeholder="Applied"/>
+            <h2>Did you apply?</h2><input type="checkbox" name="applied" placeholder="Applied"/>
             <input type="text" name="type_of_resume_sent" placeholder="ATS or Design Resume"/>
             <input type="date" name="date_applied" placeholder="Date Applied"/>
             <input type="text" name="hiring_manager" placeholder="Hiring Manager"/>
@@ -19,7 +19,7 @@ function Index (props){
             <input type="number" name="hiring_manager_phone" placeholder="Hiring Manager Phone #"/>
             <input type="text" name="interview_status" placeholder="Interview Status"/>
             <input type="text" name="application_origin" placeholder="Where did you find application"/>
-            <input type="checkbox" name="thankyou_sent" placeholder="Thank you note sent"/>
+            <h2>Did you send a thank you note?</h2><input type="checkbox" name="thankyou_sent" placeholder="Thank you note sent"/>
             <button>Create a new Job Application</button>
         </Form>
     </div>
