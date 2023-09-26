@@ -2,7 +2,7 @@ import url from "./url"
 import {redirect} from "react-router-dom"
 
 // create new action
-export const createAction = async({request}) => {
+export const createAction = async ({request}) => {
     const formData = await request.formData();
 
     const newJob = {

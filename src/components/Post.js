@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Post (post){
+function Post ({post}){
 
     const div = {
         textAlign: "center",
