@@ -13,7 +13,7 @@ function Index (props){
             <input type="text" name="job_description" placeholder="Job Description"/>
             <h3>Did you apply?</h3><input type="checkbox" name="applied" placeholder="Applied"/>
             <input type="text" name="type_of_resume_sent" placeholder="ATS or Design Resume"/>
-            <input type="date" name="date_applied" placeholder="Date Applied"/>
+            <h3>Date Applied</h3><input type="date" name="date_applied" placeholder="Date Applied"/>
             <input type="text" name="hiring_manager" placeholder="Hiring Manager"/>
             <input type="text" name="hiring_manager_email" placeholder="Hiring Manager email"/>
             <input type="number" name="hiring_manager_phone" placeholder="Hiring Manager Phone #"/>

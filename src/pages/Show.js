@@ -32,7 +32,7 @@ function Show (props) {
                     <input type="text" name="job_description" placeholder="Job Description" defaultValue={post.job_description}/>
                     <h3>Did you apply?</h3><input type="checkbox" name="applied" placeholder="Applied" defaultValue={post.applied}/>
                     <input type="text" name="type_of_resume_sent" placeholder="ATS or Design Resume" defaultValue={post.type_of_resume_sent}/>
-                    <input type="date" name="date_applied" placeholder="Date Applied" defaultValue={post.date_applied}/>
+                    <h3>Date Applied</h3><input type="date" name="date_applied" placeholder="Date Applied" defaultValue={post.date_applied}/>
                     <input type="text" name="hiring_manager" placeholder="Hiring Manager" defaultValue={post.hiring_manager}/>
                     <input type="text" name="hiring_manager_email" placeholder="Hiring Manager email" defaultValue={post.hiring_manager_email}/>
                     <input type="number" name="hiring_manager_phone" placeholder="Hiring Manager Phone #" defaultValue={post.hiring_manager_phone}/>
