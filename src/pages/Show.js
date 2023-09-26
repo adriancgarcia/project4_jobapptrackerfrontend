@@ -25,8 +25,8 @@ function Show (props) {
             <h2>{post.application_origin}</h2>
             <h2>{post.thankyou_sent}</h2>
             <div style ={{ textAlign: "center" }}>
-                <h2>Update Job</h2>
-                <Form method="post" action={`/update/${post.id}}`}>
+                <h2>Update Job Application</h2>
+                <Form method="post" action= {`/update/${post.id}`}>
                     <input type="text" name="position" placeholder="Job Position" defaultValue={post.position}/>
                     <input type="text" name="company_name" placeholder="Company Name" defaultValue={post.company_name}/>
                     <input type="text" name="job_description" placeholder="Job Description" defaultValue={post.job_description}/>
@@ -41,11 +41,11 @@ function Show (props) {
                     <input type="checkbox" name="thankyou_sent" placeholder="Thank you note sent" defaultValue={post.thankyou_sent}/>
                     <button>Update Job</button>
                 </Form>
-                <Form method="post" action={`/delete/${post.id}`}>
-                    <button>Delete Job</button>
-                </Form>
             </div>
             <Link to ="/">Back to Index</Link>
+            <Form method="post" action={`/delete/${post.id}`}>
+                <button>Delete Job</button>
+            </Form>
         </div>
     );
 }
