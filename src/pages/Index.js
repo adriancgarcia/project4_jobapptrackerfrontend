@@ -1,5 +1,5 @@
 import Post from "../components/Post";
-import {useLoaderData, Form} from "react-router-dom";
+import {useLoaderData, Form, Link} from "react-router-dom";
 
 function Index (props){
     const jobs = useLoaderData()
@@ -7,7 +7,7 @@ function Index (props){
     return <>
     <div style={{textAlign: "center"}}>
         <h2>Create New Job Application</h2>
-        <Form method="post" action="/create">
+        <Form method="post" action="/Create">
             <fieldset>
                 <label for="positionField">Job Position</label>
                 <input type="text" name="position" placeholder="Job Position"/>
@@ -33,6 +33,9 @@ function Index (props){
                 <input class="button-primary" type="submit" value="Create New Job Application" />
             </fieldset>
         </Form>
+        <Link to ="/Create">Create a new Job entry
+            {/* {jobs.map((job) => <Post key={job.id} post={job}/>)} */}
+        </Link>
     </div>
     {jobs.map((job) => <Post key={job.id} post={job}/>)}
 </>
