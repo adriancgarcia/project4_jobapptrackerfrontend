@@ -6,7 +6,7 @@ function Post ({post}){
         textAlign: "center",
         border: "3px solid",
         margin: "10px auto",
-        width: "80%",
+        width: "80%"
     }
 
     return <div style={div}>

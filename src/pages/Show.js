@@ -8,7 +8,7 @@ function Show (props) {
         border: "3px solid green",
         width: "80%",
         margin: "30px auto"
-    };
+    }
 
     return (
         <div style={div}>

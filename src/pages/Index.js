@@ -6,7 +6,7 @@ function Index (props){
 
     return <>
     <div style={{textAlign: "center"}}>
-        <h2>Create a new Job Application</h2>
+        <h2>Create New Job Application</h2>
         <Form method="post" action="/create">
             <input type="text" name="position" placeholder="Job Position"/>
             <input type="text" name="company_name" placeholder="Company Name"/>
