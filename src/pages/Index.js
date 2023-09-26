@@ -15,7 +15,7 @@ function Index (props){
                 <input type="text" name="company_name" placeholder="Company Name"/>
                 <label for="jobDescriptionField">Job Description</label>
                 <input type="text" name="job_description" id="jobDescription" placeholder="Job Description"/>
-                <h3>Did you apply?</h3><input type="checkbox" name="applied" placeholder="Applied"/>
+                <h3>Did you apply?</h3><input type="checkbox" id="appliedField" name="applied" placeholder="Applied"/>
                 <label for="resumeField">Type of resume sent</label>
                 <input type="text" name="type_of_resume_sent" placeholder="ATS or Design Resume"/>
                 <h3>Date Applied</h3><input type="date" name="date_applied" placeholder="Date Applied"/>
@@ -29,8 +29,8 @@ function Index (props){
                 <input type="text" name="interview_status" placeholder="Interview Status"/>
                 <label for="appOriginField">Origin of Job Posting</label>
                 <input type="text" name="application_origin" placeholder="Where did you find application"/>
-                <h3>Did you send a thank you note?</h3><input type="checkbox" name="thankyou_sent" placeholder="Thank you note sent"/>
-                <button>Create New Job Application</button>
+                <h3>Did you send a thank you note?</h3><input type="checkbox" id="tynoteField" name="thankyou_sent" placeholder="Thank you note sent"/>
+                <input class="button-primary" type="submit" value="Create New Job Application" />
             </fieldset>
         </Form>
     </div>
